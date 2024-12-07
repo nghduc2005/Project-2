@@ -1,0 +1,101 @@
+extend ../layouts/defaults.pug
+include ../mixins/box-head.pug
+
+block title
+    title Trang chủ
+
+block main
+    //Project 2
+    //section-1
+    .section-1
+            .container
+                .section-1__wrap
+                    img(src="assets/Image/Rectangle 9.svg" alt="" class="section-1__rect9")
+                    img(src="assets/Image/Rectangle 3.svg" alt="" class="section-1__rect3")
+                    .section-1__content
+                        h1(class="section-1__title") Thêm một bạn
+                        h2(class="section-1__sub-title") Thêm ngàn niềm vui!
+                        p(class="section-1__desc") Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!
+                        .section-1__button
+                            button(class="button button--outline")
+                                a(href="") Giới thiệu <i class="fa-regular fa-circle-play"></i>
+                            button(class="button") Khám Phá Ngay
+                    img(src="assets/Image/Rectangle 8.svg" alt="" class="section-1__rect8")
+                    .section-1__image
+                        img(src="assets/Image/Group 2.svg" alt="" class="section-1__group2")
+                        img(src="assets/Image/human-dog.png" alt="Human and dog" class="section-1__image-main")
+    //end-section-1
+
+    //section-2
+    .section-2
+        .container
+            +box-head(
+                "Có gì mới?",
+                "một số vật nuôi của chúng tôi",
+                "#"
+            )
+            .section-2__wrap
+                .product-item
+                    .product-item__image
+                        a(href="")
+                            img(src="assets/Image/image 2.jpg" alt="")
+                    .product-item__content
+                        h3(class="product-item__title")
+                            a(href="") MO231 - Pomeranian White
+                        .product-item__desc
+                            .product-item__desc-item
+                                |Giống: 
+                                <b>Đực</b>
+                            .product-item__dot
+                            .product-item__desc-item Tuổi: 
+                                <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+                .section-2__wrap__button
+                    a(href="" class="button button--outline")
+                        | Xem thêm
+                        <i class="fa-solid fa-chevron-right"></i>
+    //end-section-2
+
+    //section-3
+    include ../partials/section-3.pug
+    //end section-3
+    //section-4
+    .section-4
+            .container
+                +box-head(
+                    "Có gì mới?",
+                    "một số vật nuôi của chúng tôi",
+                    "#"
+                )
+                .section-4__wrap
+                    .block-item
+                        .block-item__image
+                            a(href="")
+                                img(src="assets/Image/image 3.jpg" alt="")
+                        .block-item__content
+                            .block-item__tag Kiến thức thú cưng
+                            h3(class="block-item__title") 
+                                a(href="") Pomeranian là gì? Cách nhận biết chó Pomeranian
+                            .block-item__desc Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.
+                    .block-item
+                        .block-item__image
+                            a(href="")
+                                img(src="assets/Image/image 3.jpg" alt="")
+                        .block-item__content
+                            .block-item__tag Kiến thức thú cưng
+                            h3(class="block-item__title") 
+                                a(href="") Pomeranian là gì? Cách nhận biết chó Pomeranian
+                            .block-item__desc Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.
+                    .block-item
+                        .block-item__image
+                            a(href="")
+                                img(src="assets/Image/image 3.jpg" alt="")
+                        .block-item__content
+                            .block-item__tag Kiến thức thú cưng
+                            h3(class="block-item__title") 
+                                a(href="") Pomeranian là gì? Cách nhận biết chó Pomeranian
+                            .block-item__desc Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.
+                .section-4__button
+                    a(href="" class="button button--outline") Xem thêm
+                        <i class="fa-solid fa-chevron-right"></i>
+    //end section-4

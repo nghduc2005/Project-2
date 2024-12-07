@@ -1,0 +1,106 @@
+extend ../layouts/defaults.pug
+include ../mixins/breadcrumb.pug
+
+block title 
+    title Danh sách sản phẩm
+
+block main
+    //box breadcrumb
+    -
+        var breadcrumb = [
+            {
+                link:"#",
+                title: "Trang chủ"
+            },
+            {
+                link:"#",
+                title: "Chó"
+            },
+            {
+                link:"#",
+                title: "Chó nhỏ"
+            }
+        ];
+
+    +breadcrumb(breadcrumb,"container")
+    //end box breadcrumb
+
+    //banner
+    include ../partials/section-3.pug
+    //end banner
+
+    //layout product
+    .layout-product
+        .container
+            .layout-product__wrap
+                .layout-product__left
+                    .filter
+                        .filter__title
+                            img(src="assets/Image/Vector.svg")
+                            |Bộ lọc
+                        .filter__list
+                            .filter__item
+                                .filter__item-title Giống
+                                .filter__item-box
+                                    .filter__item-choose
+                                        input(type="checkbox")
+                                        label Đực
+                                    .filter__item-choose
+                                        input(type="checkbox")
+                                        label Cái
+                            .filter__item
+                                .filter__item-title Màu sắc
+                                .filter__item-box
+                                    .filter__item-choose
+                                        input(type="checkbox")
+                                        label Xám
+                                    .filter__item-choose
+                                        input(type="checkbox")
+                                        label Đen
+                                    .filter__item-choose
+                                        input(type="checkbox")
+                                        label Trắng
+                            .filter__item
+                                .filter__item-title Kích thước
+                                .filter__item-box
+                                    .filter__item-choose
+                                        input(type="checkbox")
+                                        label Nhỏ
+                                    .filter__item-choose
+                                        input(type="checkbox")
+                                        label Vừa
+                                    .filter__item-choose
+                                        input(type="checkbox")
+                                        label Lớn
+                .layout-product__right
+                    .layout-product__head
+                        h1(class="layout-product__title") Chó nhỏ
+                        button.layout-product__filter
+                            img(src="assets/image/Vector.svg", alt="")
+                            |Bộ lọc
+                    .layout-product__list
+                        .product-item
+                            .product-item__image
+                                a(href="")
+                                    img(src="assets/Image/image 2.jpg" alt="")
+                            .product-item__content
+                                h3(class="product-item__title")
+                                    a(href="") MO231 - Pomeranian White
+                                .product-item__desc
+                                    .product-item__desc-item
+                                        |Giống: 
+                                        <b>Đực</b>
+                                    .product-item__dot
+                                    .product-item__desc-item Tuổi: 
+                                        <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+                    .layout-product__pagination
+                        .pagination
+                            button.pagination__button <i class="fa-solid fa-arrow-left"></i>
+                            button.pagination__button.pagination__button--active 1
+                            button.pagination__button 2
+                            button.pagination__button 3
+                            button.pagination__button 4
+                            button.pagination__button.pagination__button--disabled ...
+                            button.pagination__button <i class="fa-solid fa-arrow-right"></i>
+    //end layout product

@@ -1,0 +1,84 @@
+doctype
+html
+    head 
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="assets/css/style.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css")
+        block title
+    body
+        //header
+        header.header
+            .container
+                .header__wrap
+                    button.header__button-menu
+                        i(class="fa-solid fa-bars")
+                    .header__logo
+                        a(href="index.html")
+                            img(src="assets/Image/Frame.svg" alt="Monito")
+                    nav.header__menu
+                        ul
+                            li
+                                a(href="index.html") Trang chủ
+                            li
+                                a(href="#") Danh mục
+                            li
+                                a(href="") Giới thiệu
+                            li 
+                                a(href="") Liên hệ
+                    button.header__button-search
+                        i(class="fa-solid fa-magnifying-glass")
+                    form(action="" class="header__search")
+                        i(class="fa-solid fa-magnifying-glass")
+                        input(type="text" placeholder="Nhập từ khóa...")
+                    a(href="#" class="button") Tham gia cộng đồng
+        //end header
+
+        block main
+
+        //footer
+        .footer
+            .container
+                .footer__top
+                    h2(class="footer__title") Đăng kí ngay để không bỏ lỡ các chương trình của chúng tôi
+                    form(action="" class="footer__form")
+                        input(type="email" placeholder="Nhập email của bạn...")
+                        button Đăng ký ngay
+                .footer__middle
+                    nav(class="footer__link")
+                        ul
+                            li 
+                                a(href="") Trang chủ
+                            li 
+                                a(href="") Danh mục
+                            li 
+                                a(href="") Giới thiệu
+                            li  
+                                a(href="") Liên hệ
+
+                    nav(class= "footer__social")
+                        ul
+                            li 
+                                a(href="" target="_blank") 
+                                    <i class="fa-brands fa-facebook"></i>
+                            li 
+                                a(href="" target="_blank") 
+                                    <i class="fa-brands fa-twitter"></i>
+                            li 
+                                a(href="" target="_blank") 
+                                    <i class="fa-brands fa-instagram"></i>
+                            li 
+                                a(href="" target="_blank") 
+                                    <i class="fa-brands fa-youtube"></i>
+                .footer__bottom
+                    .footer__copyright © 2022 Monito. All rights reserved.
+                    .footer__logo
+                        a(href="") 
+                            img(src="assets/Image/Frame.svg" alt="")
+                    nav(class="footer__link")
+                        ul
+                            li
+                                a(href="") Điều khoản dịch vụ
+                            li 
+                                a(href="") Chính sách bảo mật
+        //end footer

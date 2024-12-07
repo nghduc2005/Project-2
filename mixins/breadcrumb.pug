@@ -1,0 +1,8 @@
+mixin breadcrumb(list, className="")
+    nav.box-breadcrumb
+        div(class=className)
+            ul.box-breadcrumb__list
+                each item in list
+                    li.box-breadcrumb__item
+                        a(href=item.link class="box-breadcrumb_link") #{item.title}
+                        i(class="fa-solid fa-angle-right")
